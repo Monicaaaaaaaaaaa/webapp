@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendor Profile - BowenMarket</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h1>Campus<span>Cart</span></h1>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="vendors.html" class="active">Vendors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="btn-login">Login</a></li>
+        <li><a href="#" class="btn-signup">Sign Up</a></li>
+        <li class="signup-container">
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="vendor-profile">
+    <div class="container">
+      <div class="vendor-banner">
+        <img src="images/vendor-banner.jpg" alt="Vendor Banner">
+      </div>
+      <div class="vendor-info">
+        <div class="vendor-photo">
+          <img src="images/vendor-photo.jpg" alt="Vendor Photo">
+        </div>
+        <div class="vendor-details">
+          <h2>Glam Squad</h2>
+          <div class="vendor-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>4.5 (28 reviews)</span>
+          </div>
+          <p class="vendor-description">
+            Glam Squad is your premier beauty service provider offering makeup, hair styling, and nail treatments designed to keep you looking your best on campus.
+          </p>
+          <ul class="vendor-contact">
+            <li><i class="fas fa-envelope"></i> contact@glamsquad.com</li>
+            <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Bowen University, Campus Town</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="vendor-services">
+        <h3>Our Services</h3>
+        <ul>
+          <li>Makeup & Hair Styling</li>
+          <li>Nail Services</li>
+          <li>Facials & Skin Care</li>
+        </ul>
+      </div>
+
+      <div class="vendor-gallery">
+        <h3>Gallery</h3>
+        <div class="gallery-grid">
+          <img src="images/gallery1.jpg" alt="Service 1">
+          <img src="images/gallery2.jpg" alt="Service 2">
+          <img src="images/gallery3.jpg" alt="Service 3">
+        </div>
+      </div>
+
+      <div class="vendor-reviews">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+          <p>"Amazing services! Highly recommended."</p>
+          <span>- Student A</span>
+        </div>
+        <div class="review">
+          <p>"Professional and courteous staff."</p>
+          <span>- Student B</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Campus<span>Cart</span></h2>
+          <p>Your campus marketplace</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="vendors.html">Vendors</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>For Vendors</h3>
+            <ul>
+              <li><a href="business-registration.html">Register Business</a></li>
+              <li><a href="vendor-login.html">Vendor Login</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>For Customers</h3>
+            <ul>
+              <li><a href="vendors.html">Find Services</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CampusCart. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const galleryImages = document.querySelectorAll('.gallery-grid img');
+      galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+          alert('You clicked on an image: ' + img.src);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

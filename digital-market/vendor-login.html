@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendor Login - CampusCart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h1>Campus<span>Cart</span></h1>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vendors.html" class="active">Vendors</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="vendor-login">
+    <div class="container">
+      <h2>Vendor Login</h2>
+      <form id="vendor-login-form">
+        <div class="form-group">
+          <label for="vendorEmail">Email:</label>
+          <input type="email" id="vendorEmail" name="vendorEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="vendorPassword">Password:</label>
+          <input type="password" id="vendorPassword" name="vendorPassword" required />
+        </div>
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+              <h2>Campus<span>Cart</span></h2>
+                <p>Your campus marketplace</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="vendors.html">Vendors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>For Vendors</h3>
+                    <ul>
+                        <li><a href="business-registration.html">Register Business</a></li>
+                        <li><a href="vendor-login.html">Vendor Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>For Customers</h3>
+                    <ul>
+                        <li><a href="vendors.html">Find Services</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CampusCart. All rights reserved.</p>
+            <div class="footer-policies">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="termsofservice.html">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('vendor-login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Vendor logged in successfully!');
+    });
+  </script>
+</body>
+</html>

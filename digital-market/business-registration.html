@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Business - BowenMarket</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h1>Campus<span>Cart</span></h1>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="vendors.html" class="active">Vendors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="register-business">
+    <div class="container">
+      <h2>Register Your Business</h2>
+      <p>Join CampusCart to reach campus customers and grow your business.</p>
+      <form id="vendor-registration-form">
+        <div class="form-group">
+          <label for="businessName">Business Name:</label>
+          <input type="text" id="businessName" name="businessName" required />
+        </div>
+        <div class="form-group">
+          <label for="businessEmail">Business Email:</label>
+          <input type="email" id="businessEmail" name="businessEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="businessPhone">Phone Number:</label>
+          <input type="tel" id="businessPhone" name="businessPhone" required />
+        </div>
+        <div class="form-group">
+          <label for="businessCategory">Business Category:</label>
+          <select id="businessCategory" name="businessCategory" required>
+            <option value="">Select a category</option>
+            <option value="beauty">Beauty Professional</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="services">Other Services</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="businessPassword">Password:</label>
+          <input type="password" id="businessPassword" name="businessPassword" required />
+        </div>
+        <button type="submit" class="btn-primary">Register Business</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+              <h2>Campus<span>Cart</span></h2>
+                <p>Your campus marketplace</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="vendors.html">Vendors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>For Vendors</h3>
+                    <ul>
+                        <li><a href="business-registration.html">Register Business</a></li>
+                        <li><a href="vendor-login.html">Vendor Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>For Customers</h3>
+                    <ul>
+                        <li><a href="vendors.html">Find Services</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CampusCart. All rights reserved.</p>
+            <div class="footer-policies">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="termsofservice.html">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('vendor-registration-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Business registration successful!');
+    });
+  </script>
+</body>
+</html>
